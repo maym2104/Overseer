@@ -117,7 +117,7 @@ namespace Overseer{
             *
             * \return vector the sc2::Point2D
             */
-            std::vector<sc2::Point2D> getPoints();
+            std::vector<sc2::Point2D> getPoints() const;
             
             /**
             * \brief Add tile position to region.

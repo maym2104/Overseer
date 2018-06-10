@@ -28,6 +28,11 @@ namespace Overseer{
 		return m_regions;
 	}
 
+	const std::pair<const Region *, const Region *> & ChokePoint::getRegions() const{
+
+		return m_regions;
+	}
+
 	size_t ChokePoint::Size() const {
 
 		return m_tilePositions.size();
@@ -38,7 +43,7 @@ namespace Overseer{
 	    return m_center.first;
 	}
 
-	std::vector<sc2::Point2D> ChokePoint::getPoints() {
+	std::vector<sc2::Point2D> ChokePoint::getPoints() const {
 	    std::vector<sc2::Point2D> points;
 
 	    for(auto const & tilePosition : m_tilePositions) {

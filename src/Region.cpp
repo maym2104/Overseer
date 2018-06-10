@@ -60,7 +60,7 @@ namespace Overseer{
 		return m_tilePositions;
 	}
 
-	std::vector<sc2::Point2D> Region::getPoints() {
+	std::vector<sc2::Point2D> Region::getPoints() const{
         std::vector<sc2::Point2D> points;
         
         for(auto const & tilePosition : m_tilePositions) {
